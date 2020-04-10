@@ -1,16 +1,27 @@
 <html>
 <head>
-    <script src="https://d3js.org/d3.v5.min.js">
-    <link rel="stylesheet" type="text/css" href="graph.css">
-    </script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" type ="text/css" href ="graph.css">
+    
     </head>
     <body>
     <script src="Penguin.js"></script>
-        
+    <h1><em>Grade Breakdown:</em></h1>
+    <h7 id="button1">Grade on Final vs. Average Homework</h7>
+    <h7 id="button2">Average Homework vs. Average Quiz</h7>
+    <h7 id="button3">Average Test vs. Grade on Final</h7>
+    <h7 id="button4">Average Test vs. Average Quiz</h7>
     <div id="spread">
-        <h2>Grades</h2>
         <svg width="550" height="300" id="graph"></svg>
         </div>
+    <div id="tooltip" class="hidden">
+        <p><img></p>
+        <p>*Grade on Final: <span id="value"></span></p>
+        <p>*Average Homework Grade: <span id="value1"></span></p>
+        <p>*Average Quiz Grade: <span id="value2"></span></p>
+        <p>*Average Test Grade: <span id="value3"></span></p>
+        </div>
+    <p id="average" class="hidden1"></p>
     </body>
     <script src="imgs/">
     
